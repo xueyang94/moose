@@ -63,9 +63,9 @@ if [[ ! -f "$MOOSE_DIR/stork/include/base/StorkApp.h" ]]; then
     exit 1
 fi
 
-if [[ "$kind" == "app" ]]; then
-    git status &>/dev/null && echo "error: your current working directory is inside a git repository" >&2 && exit 1
-fi
+#if [[ "$kind" == "app" ]]; then
+#    git status &>/dev/null && echo "error: your current working directory is inside a git repository" >&2 && exit 1
+#fi
 
 # copy stork tree - abort if dir already exists or copy fails
 if [[ -d "$dir" ]]; then
